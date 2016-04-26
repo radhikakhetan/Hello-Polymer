@@ -1,0 +1,39 @@
+<link rel="import"
+      href="bower_components/polymer/polymer.html">
+
+<dom-module id="dom-element">
+
+	<template>
+		<style>
+		  	div {
+		  		display: inline-block;
+		  		background-color: #ccc;
+		  		border-radius: 6px;
+		  		padding: 4px;
+		  	}
+		  </style>
+
+		  <div>
+		  	yo <b> {{owner}} </b>
+		  </div>
+
+		</template>
+
+  
+
+  <script>
+    Polymer({
+      is: "dom-element",
+      // ready: function() {
+      // 	this.owner = "radhika";
+      // }
+      properties: {
+      	owner: {
+      		type: String,
+      		value: "radhika"
+      	}
+      }
+    });
+  </script>
+
+</dom-module>

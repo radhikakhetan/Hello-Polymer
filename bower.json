@@ -1,0 +1,24 @@
+{
+  "name": "Hello Polymer",
+  "authors": [
+    "Radhika Khetan <rkhetan@paypal.com>"
+  ],
+  "description": "introduction to polymer element using data binding",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "Polymer",
+    "web-components"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "~1.3.1"
+  }
+}
