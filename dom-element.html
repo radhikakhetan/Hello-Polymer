@@ -1,37 +1,46 @@
 <link rel="import"
       href="bower_components/polymer/polymer.html">
 
+<link rel="import"
+href="bower_components/iron-input/iron-input.html">
+
 <dom-module id="dom-element">
 
-	<template>
-		<style>
-		  	div {
-		  		display: inline-block;
-		  		background-color: #ccc;
-		  		border-radius: 6px;
-		  		padding: 4px;
-		  	}
-		  </style>
+  <template>
+    <style>
+        div {
+          display: inline-block;
+          background-color: #ccc;
+          border-radius: 6px;
+          padding: 4px;
+        }
+      </style>
 
-		  <div>
-		  	yo <b> {{owner}} </b>
-		  </div>
+      <div>
+        yo <b> {{owner}} </b>
+      </div>
+      <!-- The is="iron-input" attribute indicates the input is a type-extension custom element; the element name is iron-input, and it extends the native <input> element. -->
 
-		</template>
+      <!-- 2 way binding not working as of now. some issues in library -->
+      <div>
+        <input is="iron-input" bind-value="{{owner}}" placeholder="your name" >
+      </div>
 
-  
+    </template>
 
   <script>
     Polymer({
       is: "dom-element",
       // ready: function() {
-      // 	this.owner = "radhika";
+      //  this.owner = "radhika";
       // }
+
+      //we define the default owner property and define it in  index.html
       properties: {
-      	owner: {
-      		type: String,
-      		value: "radhika"
-      	}
+        owner: {
+          type: String,
+          value: "radhika"
+        }
       }
     });
   </script>
